@@ -1,0 +1,13 @@
+import express from "express";
+const courseRouter = express.Router() ;
+
+import {getAll , insertCourse} from '../controllers/course.js' ; 
+
+courseRouter.get('/all' , getAll); 
+
+
+////////////////////////////////////////////////////////////////  temp route to insert course  ///////////////////////////////////////////////////
+courseRouter.post('/insert' , insertCourse) ; 
+////////////////////////////////////////////////////////////////  temp route to insert course  ///////////////////////////////////////////////////
+
+export default courseRouter ;
